@@ -1,0 +1,12 @@
+From,To,Time
+positive,neutral,2.002
+positive,neutral,2.0854166666666667
+neutral,negative,28.69533333333333
+neutral,negative,28.77875
+negative,neutral,46.71333333333333
+negative,neutral,46.796749999999996
+neutral,negative,82.66591666666666
+neutral,negative,82.74933333333333
+neutral,negative,82.83274999999999
+negative,neutral,123.37324999999998
+negative,neutral,123.45666666666666

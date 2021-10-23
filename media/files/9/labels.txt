@@ -1,0 +1,14 @@
+From,To,Time
+neutral,positive,6.16
+neutral,positive,6.24
+neutral,positive,6.32
+positive,neutral,6.88
+positive,neutral,6.96
+positive,neutral,7.04
+neutral,positive,41.84
+neutral,positive,41.92
+positive,neutral,59.44
+positive,neutral,59.52
+neutral,negative,96.8
+neutral,negative,96.88
+neutral,negative,96.96

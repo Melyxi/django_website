@@ -1,0 +1,46 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block name %}
+  <div class="row">
+          <div style="text-align: center;">
+        <h2>{{object.name_folder}}</h2>
+    </div>
+  </div>
+{% endblock name %}
+
+{% block video %}
+   <div id="video_folder" style="margin-top: 50px;">
+       <video id="myVideo" width="520" height="376" controls preload>
+            <source src="{% url 'video' object.pk %}" type="video/mp4">
+        </video>
+    </div>
+    <div id="text-folder">
+        {% for time in time_code %}
+
+              <p style="margin-bottom: 4px;"><span class="time-link" style="cursor: pointer; text-decoration: underline; color: blue">{{time.2}} </span>&nbsp;&nbsp;{{time.0}} -> {{time.1}}</p>
+
+        {% endfor %}
+    </div>
+    </div>
+    <div class="col">
+
+        <div id="img_folder">
+             <img src="{{url_pictures}}">
+        </div>
+    </div>
+{% endblock video %}
+
+{% block script %}
+<script>
+var vid = document.getElementById("myVideo");
+
+$('.time-link').on('click', function(event){
+    let time_code = $(this).text()
+    vid.currentTime = time_code;
+    vid.pause()
+})
+
+</script>
+{% endblock script%}
